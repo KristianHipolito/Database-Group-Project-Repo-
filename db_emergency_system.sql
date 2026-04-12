@@ -18,6 +18,25 @@ CREATE TABLE floors (
 	floor_id int PRIMARY KEY
 );
 
+
+-- Innocent's commit of "location", and "room"
+CREATE TABLE location (
+	location_id int PRIMARY KEY,
+	floor_id int NOT NULL,
+	emergency_id int,
+	FOREIGN KEY(floor_id) REFERENCES floor (floor_id),
+	FOREIGN KEY(emergency_id) REFERENCES emergency(emergency_id)		
+);
+
+CREATE TABLE room(
+	room_id int PRIMARY KEY,
+	location_id int NOT NULL,
+	room_name VARCHAR(100) NOT NULL,
+	room_type VARCHAR(100),
+	FOREIGN KEY(location_id) REFERENCES location(location_id)
+);
+
+
 -- Carlos' commit of "users", "user_resource" (accommodates), and "resources"
 CREATE TABLE users (
 	user_id int PRIMARY KEY,
