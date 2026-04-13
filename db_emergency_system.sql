@@ -63,3 +63,22 @@ CREATE TABLE resources (
     handicap BOOLEAN NOT NULL,
     resource_type VARCHAR(100) NOT NULL
 );
+
+
+-- Jesus' commit of "emergency route" and "utilizes"
+CREATE TABLE emergency_route (
+	route_id int PRIMARY KEY,
+	eta int,
+	distance int,
+	start_location_id int 
+	FOREIGN KEY(start_location_id) REFERENCES location(location_id)
+);
+
+CREATE TABLE route_resource (
+	route_resource_id
+	resource_id int,
+	route_id int,
+	CONSTRAINT route_resource_id PRIMARY KEY (resource_id, route_id),
+	CONSTRAINT fk_user_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id),
+	CONSTRAINT fk_route_id FOREIGN KEY (route_id) REFERENCES emergency_route(route_id)
+);
