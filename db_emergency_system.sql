@@ -10,12 +10,23 @@ CREATE TABLE buildings (
     contains_professor_office BOOLEAN,
     contains_restraunt BOOLEAN
 );
-CREATE TABLE building_floor (
-	building_id int PRIMARY KEY,
-    floor_id int PRIMARY KEY
-);
+
 CREATE TABLE floors (
 	floor_id int PRIMARY KEY
+);
+
+CREATE TABLE building_floor (
+    building_id int,
+    floor_id int,
+    CONSTRAINT building_floor_id PRIMARY KEY (building_id, floor_id),
+	CONSTRAINT fk_building_id FOREIGN KEY (building_id) REFERENCES buildings(building_id),
+	CONSTRAINT fk_floor_id FOREIGN KEY (floor_id) REFERENCES floors(floor_id)
+);
+
+CREATE TABLE room(
+	room_id int PRIMARY KEY,
+	room_name VARCHAR(100) NOT NULL,
+	room_type VARCHAR(100)
 );
 
 
@@ -23,19 +34,17 @@ CREATE TABLE floors (
 CREATE TABLE location (
 	location_id int PRIMARY KEY,
 	floor_id int NOT NULL,
-	emergency_id int,
-	FOREIGN KEY(floor_id) REFERENCES floor (floor_id),
-	FOREIGN KEY(emergency_id) REFERENCES emergency(emergency_id)		
+    room_id int NOT NULL,
+	FOREIGN KEY(floor_id) REFERENCES floors (floor_id)
 );
 
-CREATE TABLE room(
-	room_id int PRIMARY KEY,
-	location_id int NOT NULL,
-	room_name VARCHAR(100) NOT NULL,
-	room_type VARCHAR(100),
-	FOREIGN KEY(location_id) REFERENCES location(location_id)
+CREATE TABLE emergency_route (
+	route_id int PRIMARY KEY,
+	eta int,
+	distance int,
+	start_location_id int,
+	FOREIGN KEY(start_location_id) REFERENCES location(location_id)
 );
-
 
 -- Carlos' commit of "users", "user_resource" (accommodates), and "resources"
 CREATE TABLE users (
@@ -47,14 +56,6 @@ CREATE TABLE users (
     user_email VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE user_resource (
-	user_id INT,
-    resource_id INT,
-	CONSTRAINT accommodates PRIMARY KEY (user_id, resource_id),
-    CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(id),
-    CONSTRAINT fk_resource_id FOREIGN KEY (resource_id) REFERENCES resources(id)
-);
-
 CREATE TABLE resources (
 	resource_id int PRIMARY KEY,
     route_id int REFERENCES emergency_route_resource (route_id),
@@ -64,21 +65,22 @@ CREATE TABLE resources (
     resource_type VARCHAR(100) NOT NULL
 );
 
+CREATE TABLE user_resource (
+	user_id INT,
+    resource_id INT,
+	CONSTRAINT accommodates PRIMARY KEY (user_id, resource_id),
+    CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(user_id),
+    CONSTRAINT fk_resource_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id)
+);
+
 
 -- Jesus' commit of "emergency route" and "utilizes"
-CREATE TABLE emergency_route (
-	route_id int PRIMARY KEY,
-	eta int,
-	distance int,
-	start_location_id int,
-	FOREIGN KEY(start_location_id) REFERENCES location(location_id)
-);
 
 CREATE TABLE route_resource (
 	route_resource_id int,
 	resource_id int,
 	route_id int,
 	CONSTRAINT route_resource_id PRIMARY KEY (resource_id, route_id),
-	CONSTRAINT fk_resource_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id),
+	CONSTRAINT fk_resources_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id),
 	CONSTRAINT fk_route_id FOREIGN KEY (route_id) REFERENCES emergency_route(route_id)
 );
