@@ -79,6 +79,6 @@ CREATE TABLE route_resource (
 	resource_id int,
 	route_id int,
 	CONSTRAINT route_resource_id PRIMARY KEY (resource_id, route_id),
-	CONSTRAINT fk_user_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id),
+	CONSTRAINT fk_resource_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id),
 	CONSTRAINT fk_route_id FOREIGN KEY (route_id) REFERENCES emergency_route(route_id)
 );
