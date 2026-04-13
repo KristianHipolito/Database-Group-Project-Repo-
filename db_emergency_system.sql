@@ -35,7 +35,8 @@ CREATE TABLE location (
 	location_id int PRIMARY KEY,
 	floor_id int NOT NULL,
     room_id int NOT NULL,
-	FOREIGN KEY(floor_id) REFERENCES floors (floor_id)
+	FOREIGN KEY(floor_id) REFERENCES floors (floor_id),
+    FOREIGN KEY(room_id) REFERENCES room (room_id)
 );
 
 CREATE TABLE emergency_route (
