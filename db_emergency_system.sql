@@ -10,7 +10,7 @@ CREATE TABLE buildings (
     contains_professor_office BOOLEAN,
     contains_restraunt BOOLEAN
 );
-CREATE TABLE containing (
+CREATE TABLE building_floor (
 	building_id int PRIMARY KEY,
     floor_id int PRIMARY KEY
 );
@@ -70,12 +70,12 @@ CREATE TABLE emergency_route (
 	route_id int PRIMARY KEY,
 	eta int,
 	distance int,
-	start_location_id int 
+	start_location_id int,
 	FOREIGN KEY(start_location_id) REFERENCES location(location_id)
 );
 
 CREATE TABLE route_resource (
-	route_resource_id
+	route_resource_id int,
 	resource_id int,
 	route_id int,
 	CONSTRAINT route_resource_id PRIMARY KEY (resource_id, route_id),
