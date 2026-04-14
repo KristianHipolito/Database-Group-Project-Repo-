@@ -53,7 +53,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE resources (
-	resource_id int PRIMARY KEY,
+	resource_id int AUTO_INCREMENT PRIMARY KEY,
     route_id int REFERENCES emergency_route_resource (route_id),
     location VARCHAR(100),
     availability BOOLEAN NOT NULL,
