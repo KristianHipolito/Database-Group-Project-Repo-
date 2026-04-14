@@ -502,3 +502,33 @@ VALUES (39, '01.28', 'Classroom');
 
 INSERT INTO location (building_floor_id, room_number, room_type)
 VALUES (40, '01.06', 'Classroom');
+
+
+
+INSERT INTO users 
+VALUES (1, 1, FALSE, "Carlos", "Miranda", "carlos.miranda2@my.utsa.edu"), 
+(2, 2, FALSE, "Jesus", "Pantoja", "jesus.pentoja@my.utsa.edu"), 
+(3, 4, FALSE, "Kristian", "Hipolito", "kristian.hipolito@my.utsa.edu"), 
+(4, 3, FALSE, "Innocent", "Hakim", "innocent.hakim@my.utsa.edu"), 
+(5, 8, FALSE, "Robert", "Garcia", "robert.garcia@my.utsa.edu"), 
+(6, 14, TRUE, "Henry", "Nguyen", "henry.nguyen@my.utsa.edu"), 
+(7, 5, FALSE, "Jose", "Gonzalez", "jose.gonzalez@my.utsa.edu"), 
+(8, 17, TRUE, "Juan", "Castillo", "juan.castillo@my.utsa.edu"), 
+(9, 24, TRUE, "Abigail", "Hernandez", "abigail.hernandez@my.utsa.edu"), 
+(10, 16, FALSE, "Fabiola", "Garcia", "fabiola.garcia@my.utsa.edu"), 
+(11, 4, FALSE, "Nate", "Collette", "nate.collette@my.utsa.edu"), 
+(12, 1, FALSE, "Alexa", "Martinez", "alexa.martinez@my.utsa.edu"), 
+(13, 3, FALSE, "Luis", "Garcia", "luis.garcia@my.utsa.edu"), 
+(14, 10, TRUE, "Mike", "Scott", "mike.scott@my.utsa.edu"), 
+(15, 12, FALSE, "Paulina", "Olmos", "paulina.olmos@my.utsa.edu"), 
+(16, 17, FALSE, "Carolina", "Sloan", "carolina.sloan@my.utsa.edu"), 
+(17, 19, FALSE, "Katrina", "Brown", "katrina.brown@my.utsa.edu"), 
+(18, 20, FALSE, "Christine", "Kim", "christine.kim@my.utsa.edu"), 
+(19, 4, TRUE, "Claire", "Shaw", "claire.shaw@my.utsa.edu"), 
+(20, 3, FALSE, "Matthew", "Hartwell", "matthew.hartwell@my.utsa.edu"), 
+(21, 2, FALSE, "Kristina", "Hinajosa", "kristina.hinajosa@my.utsa.edu"), 
+(22, 7, FALSE, "Prescilla", "Costilla", "prescilla.costilla@my.utsa.edu"), 
+(23, 14, FALSE, "Thomas", "Presley", "thomas.presley@my.utsa.edu"), 
+(24, 15, FALSE, "Jay", "Davis", "jay.davis@my.utsa.edu");
+
+
