@@ -531,4 +531,48 @@ VALUES (1, 1, FALSE, "Carlos", "Miranda", "carlos.miranda2@my.utsa.edu"),
 (23, 14, FALSE, "Thomas", "Presley", "thomas.presley@my.utsa.edu"), 
 (24, 15, FALSE, "Jay", "Davis", "jay.davis@my.utsa.edu");
 
+INSERT INTO emergency_route
+VALUE (1, 1.50, 100, 1),
+(2, 1.00, 60, 4),
+(3, 1.50, 105, 3),
+(4, 1.25, 82, 5),
+(5, 2.00, 135, 8),
+(6, 0.50, 34, 2),
+(7, 0.75, 57, 6),
+(8, 0.25, 22, 7),
+(9, 1.00, 68, 10);
 
+INSERT INTO resources (route_id, location, availability, handicap, resource_type)
+VALUES (8, '1st floor - Laboratory', TRUE, FALSE, 'Wheelchair'),
+(5, '1st floor - Laboratory' , FALSE, TRUE, 'RAMPS'),
+(5, '1st floor - Laboratory', FALSE, FALSE, 'Stairs'),
+(2, '1st floor - Laboratory', TRUE, TRUE, 'Elevator'),
+(1, '1st floor - Classroom', TRUE, FALSE, 'Wheelchair'),
+(5, '1st floor - Classroom' , FALSE, TRUE, 'RAMPS'),
+(9, '1st floor - Classroom', FALSE, FALSE, 'Stairs'),
+(2, '1st floor - Classroom', TRUE, TRUE, 'Elevator'),
+(6, '2nd floor - Classroom', TRUE, FALSE, 'Wheelchair'),
+(5, '2nd floor - Classroom' , FALSE, TRUE, 'RAMPS'),
+(1, '3rd floor - Classroom', FALSE, FALSE, 'Stairs'),
+(2, '3rd floor - Classroom', TRUE, TRUE, 'Elevator'),
+(7, '3rd floor - Classroom', TRUE, FALSE, 'Wheelchair'),
+(5, '3rd floor - Classroom' , FALSE, TRUE, 'RAMPS'),
+(2, '3rd floor - Classroom', TRUE, TRUE, 'Elevator'),
+(1, '3rd floor - Laboratory', TRUE, FALSE, 'Wheelchair'),
+(5, '3rd floor - Laboratory' , FALSE, TRUE, 'RAMPS'),
+(1, '3rd floor - Laboratory', FALSE, FALSE, 'Stairs'),
+(2, '4th floor - Classroom', TRUE, TRUE, 'Elevator'),
+(6, '4th floor - Classroom', TRUE, FALSE, 'Wheelchair'),
+(5, '4th floor - Classroom', FALSE, TRUE, 'RAMPS'),
+(5, '4th floor - Classroom', FALSE, FALSE, 'Stairs'),
+(2, '4th floor - Classroom', TRUE, TRUE, 'Elevator');
+
+INSERT INTO user_resource (user_id, resource_id) VALUES
+(1,3),(1,5),(2,1),(2,4),(3,2),(3,6),
+(4,1),(4,3),(5,2),(5,7),(6,4),(6,8),
+(7,1),(7,5),(8,3),(8,6),(9,2),(9,9),
+(10,4),(10,10);
+
+INSERT INTO route_resource (resource_id, route_id) VALUES
+(1,1),(2,1),(3,2),(4,2),(5,3),(6,3),
+(7,4),(8,4),(9,5);
