@@ -35,11 +35,12 @@ CREATE TABLE location (
 
 CREATE TABLE emergency_route (
 	route_id int PRIMARY KEY,
-	eta int,
-	distance int,
+	eta_in_minutes DECIMAL(3, 2),
+	distance_in_feet int,
 	start_location_id int,
 	FOREIGN KEY(start_location_id) REFERENCES location(location_id)
 );
+
 
 -- Carlos' commit of "users", "user_resource" (accommodates), and "resources"
 CREATE TABLE users (
