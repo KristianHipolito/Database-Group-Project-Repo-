@@ -16,27 +16,21 @@ CREATE TABLE floors (
 );
 
 CREATE TABLE building_floor (
+	building_floor_id int AUTO_INCREMENT PRIMARY KEY,
     building_id int,
     floor_id int,
-    CONSTRAINT building_floor_id PRIMARY KEY (building_id, floor_id),
-	CONSTRAINT fk_building_id FOREIGN KEY (building_id) REFERENCES buildings(building_id),
-	CONSTRAINT fk_floor_id FOREIGN KEY (floor_id) REFERENCES floors(floor_id)
-);
-
-CREATE TABLE room(
-	room_id int PRIMARY KEY,
-	room_name VARCHAR(100) NOT NULL,
-	room_type VARCHAR(100)
+	FOREIGN KEY (building_id) REFERENCES buildings(building_id),
+	FOREIGN KEY (floor_id) REFERENCES floors(floor_id)
 );
 
 
 -- Innocent's commit of "location", and "room"
 CREATE TABLE location (
-	location_id int PRIMARY KEY,
-	floor_id int NOT NULL,
-    room_id int NOT NULL,
-	FOREIGN KEY(floor_id) REFERENCES floors (floor_id),
-    FOREIGN KEY(room_id) REFERENCES room (room_id)
+	location_id int AUTO_INCREMENT PRIMARY KEY,
+	building_floor_id int NOT NULL,
+    room_number VARCHAR(100) NOT NULL,
+	room_type VARCHAR(100) NOT NULL,
+	FOREIGN KEY(building_floor_id) REFERENCES building_floor (building_floor_id)
 );
 
 CREATE TABLE emergency_route (
@@ -67,9 +61,9 @@ CREATE TABLE resources (
 );
 
 CREATE TABLE user_resource (
+	user_resource int AUTO_INCREMENT PRIMARY KEY,
 	user_id INT,
     resource_id INT,
-	CONSTRAINT accommodates PRIMARY KEY (user_id, resource_id),
     CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(user_id),
     CONSTRAINT fk_resource_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id)
 );
@@ -78,10 +72,9 @@ CREATE TABLE user_resource (
 -- Jesus' commit of "emergency route" and "utilizes"
 
 CREATE TABLE route_resource (
-	route_resource_id int,
+	route_resource_id int AUTO_INCREMENT PRIMARY KEY,
 	resource_id int,
 	route_id int,
-	CONSTRAINT route_resource_id PRIMARY KEY (resource_id, route_id),
 	CONSTRAINT fk_resources_id FOREIGN KEY (resource_id) REFERENCES resources(resource_id),
 	CONSTRAINT fk_route_id FOREIGN KEY (route_id) REFERENCES emergency_route(route_id)
 );
