@@ -29,479 +29,93 @@ VALUES (1, 0), (1, 1), (1, 2), (1, 3), (1, 4),
 
 -- SEB Building
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (26, '150E', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (26, '150F', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (26, '150G', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (26, '150H', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (26, '150R', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '106', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '108', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '110', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '112', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '116', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '148', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '178', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '156A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '156B', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '156D', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (27, '156A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (28, '108', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (28, '140C', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (28, '142B', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (28, '156', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (28, '162', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (28, '172', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (29, '136', 'Classroom');
+VALUES (26, '150E', 'Laboratory'), (26, '150F', 'Laboratory'), (26, '150G', 'Laboratory'),
+	(26, '150H', 'Laboratory'), (26, '150R', 'Classroom'), (27, '106', 'Classroom'),
+	(27, '108', 'Classroom'), (27, '110', 'Classroom'), (27, '112', 'Laboratory'),
+	(27, '116', 'Classroom'), (27, '148', 'Classroom'), (27, '178', 'Classroom'),
+	(27, '156A', 'Classroom'), (27, '156B', 'Classroom'), (27, '156D', 'Classroom'),
+	(27, '156A', 'Classroom'), (28, '108', 'Classroom'), (28, '140C', 'Laboratory'),
+    (28, '142B', 'Laboratory'), (28, '156', 'Classroom'), (28, '162', 'Classroom'),
+	(28, '172', 'Classroom'), (29, '136', 'Classroom');
 
 -- BSE Building
 
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (2, '106B', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (2, '110', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (2, '406', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (2, '408', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (2, '412', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (2, '632', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (3, '102', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (3, '106M', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (3, '110A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (3, '304B.3', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (4, '106', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (4, '108', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (5, '124A', 'Laboratory');
+VALUES (2, '106B', 'Classroom'), (2, '110', 'Classroom'), (2, '406', 'Classroom'),
+	(2, '408', 'Classroom'), (2, '412', 'Classroom'), (2, '632', 'Classroom'),
+	(3, '102', 'Classroom'), (3, '106M', 'Classroom'), (3, '110A', 'Classroom'),
+	(3, '304B.3', 'Laboratory'), (4, '106', 'Classroom'), (4, '108', 'Laboratory'),
+	(5, '124A', 'Laboratory');
 
 -- McKinney (MHB)
 
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.04', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.08', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.12', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.24', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.30', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '01.36', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '02.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '02.16', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (6, '02.20', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '01.05', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '01.16', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '01.18', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '01.28', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '02.04', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '02.18', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '02.22', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '02.26', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '02.38', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '02.52', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '03.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '03.14', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '03.16', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '03.18', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '03.20', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '04.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '04.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '04.20', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '04.22', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (7, '04.28', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (8, '01.23E', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (8, '02.04', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (8, '02.34', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (8, '03.40', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (8, '04.12', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (8, '04.56', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (8, '04.60', 'Laboratory');
+VALUES (6, '01.02', 'Classroom'), (6, '01.04', 'Classroom'),
+	(6, '01.06', 'Classroom'), (6, '01.08', 'Classroom'), (6, '01.10', 'Classroom'),
+	(6, '01.12', 'Classroom'), (6, '01.24', 'Classroom'), (6, '01.30', 'Classroom'),
+	(6, '01.36', 'Classroom'), (6, '02.10', 'Classroom'), (6, '02.16', 'Classroom'),
+	(6, '02.20', 'Classroom'), (7, '01.05', 'Classroom'), (7, '01.16', 'Classroom'),
+	(7, '01.18', 'Classroom'), (7, '01.28', 'Classroom'), (7, '02.04', 'Classroom'),
+	(7, '02.18', 'Classroom'), (7, '02.22', 'Classroom'), (7, '02.26', 'Classroom'),
+	(7, '02.38', 'Classroom'), (7, '02.52', 'Classroom'), (7, '03.06', 'Classroom'),
+	(7, '03.14', 'Classroom'), (7, '03.16', 'Classroom'), (7, '03.18', 'Classroom'),
+	(7, '03.20', 'Classroom'), (7, '04.06', 'Classroom'), (7, '04.10', 'Classroom'),
+	(7, '04.20', 'Classroom'), (7, '04.22', 'Classroom'), (7, '04.28', 'Classroom'),
+	(8, '01.23E', 'Classroom'), (8, '02.04', 'Classroom'), (8, '02.34', 'Classroom'),
+	(8, '03.40', 'Classroom'), (8, '04.12', 'Classroom'), (8, '04.56', 'Classroom'),
+	(8, '04.60', 'Laboratory');
 
 -- North Paseo (NPB)
 
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (9, '102', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (9, '114', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (9, '122', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (9, '126', 'Laboratory');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (10, '112', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (11, '108A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (12, '140', 'Classroom');
-
+VALUES (9, '102', 'Classroom'), (9, '114', 'Classroom'), (9, '122', 'Laboratory'),
+	(9, '126', 'Laboratory'), (10, '112', 'Classroom'), (11, '108A', 'Classroom'),
+	(12, '140', 'Classroom');
 
 -- Business Building (BB)
 
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (13, '01.02B', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (13, '01.20D', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (13, '01.20M', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (14, '01.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (14, '01.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (14, '01.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '01.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '01.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '01.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '02.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '02.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '02.14', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '02.28', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '03.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '03.05', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '03.16', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '03.24', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '04.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (15, '04.18', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '01.08A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '01.18H', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '02.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '02.48', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '02.68', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '03.26', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '03.35', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '04.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '04.20', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (16, '06.12', 'Classroom');
+VALUES (13, '01.02B', 'Classroom'), (13, '01.20D', 'Classroom'),
+	(13, '01.20M', 'Classroom'), (14, '01.02', 'Classroom'), (14, '01.06', 'Classroom'),
+	(14, '01.10', 'Classroom'), (15, '01.02', 'Classroom'), (15, '01.06', 'Classroom'),
+	(15, '01.10', 'Classroom'), (15, '02.06', 'Classroom'), (15, '02.02', 'Classroom'),
+	(15, '02.14', 'Classroom'), (15, '02.28', 'Classroom'), (15, '03.02', 'Classroom'),
+	(15, '03.05', 'Classroom'), (15, '03.16', 'Classroom'), (15, '03.24', 'Classroom'),
+	(15, '04.06', 'Classroom'), (15, '04.18', 'Classroom'), (16, '01.08A', 'Classroom'),
+	(16, '01.18H', 'Classroom'), (16, '02.10', 'Classroom'), (16, '02.48', 'Classroom'),
+	(16, '02.68', 'Classroom'), (16, '03.26', 'Classroom'), (16, '03.35', 'Classroom'),
+	(16, '04.02', 'Classroom'), (16, '04.20', 'Classroom'), (16, '06.12', 'Classroom');
 
 -- JPL
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (19, '01.08E', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (19, '01.12C', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (20, '01.54', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (20, '02.32', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (20, '02.34', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (20, '02.38', 'Classroom');
+VALUES (19, '01.08E', 'Classroom'), (19, '01.12C', 'Classroom'), (20, '01.54', 'Classroom'), 
+	(20, '02.32', 'Classroom'), (20, '02.34', 'Classroom'), (20, '02.38', 'Classroom');
 
 -- AET
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (23, '102F', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (24, '106', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (25, '204', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (25, '205C', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (25, '328', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (25, '346', 'Classroom');
+VALUES (23, '102F', 'Classroom'), (24, '106', 'Classroom'), (25, '204', 'Classroom'),
+	(25, '205C', 'Classroom'), (25, '328', 'Classroom'), (25, '346', 'Classroom');
 
 -- EB
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (30, '04.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (30, '04.08', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (30, '04.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (30, '04.18', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (31, '04.04', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (31, '04.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (31, '04.22', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (31, '04.26A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (31, '04.30', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (31, '04.64', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (31, '04.70', 'Classroom');
+VALUES (30, '04.02', 'Classroom'), (30, '04.08', 'Classroom'), (30, '04.10', 'Classroom'),
+	(30, '04.18', 'Classroom'), (31, '04.04', 'Classroom'), (31, '04.06', 'Classroom'),
+	(31, '04.22', 'Classroom'), (31, '04.26A', 'Classroom'), (31, '04.30', 'Classroom'),
+	(31, '04.64', 'Classroom'), (31, '04.70', 'Classroom');
 
 -- BSB
 
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (35, '03.10', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (36, '03.02', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (36, '03.10', 'Classroom');
+VALUES (35, '03.10', 'Classroom'), (36, '03.02', 'Classroom'), (36, '03.10', 'Classroom');
 
 -- ART
 
 INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (37, '01.20', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (37, '01.24', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (37, '01.30', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (37, '02.06', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (38, '02.12', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (38, '02.24', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (38, '03.02B', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (38, '03.14A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (38, '03.20A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (38, '03.22A', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (38, '03.02B', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (39, '01.07', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (39, '01.11', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (39, '01.26', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (39, '01.28', 'Classroom');
-
-INSERT INTO location (building_floor_id, room_number, room_type)
-VALUES (40, '01.06', 'Classroom');
+VALUES (37, '01.20', 'Classroom'), (37, '01.24', 'Classroom'), (37, '01.30', 'Classroom'),
+	(37, '02.06', 'Classroom'), (38, '02.24', 'Classroom'), (38, '03.02B', 'Classroom'),
+	(38, '03.14A', 'Classroom'), (38, '03.20A', 'Classroom'), (38, '03.22A', 'Classroom'),
+	(38, '03.02B', 'Classroom'), (39, '01.07', 'Classroom'), (39, '01.11', 'Classroom'),
+	(39, '01.26', 'Classroom'), (39, '01.28', 'Classroom'), (40, '01.06', 'Classroom');
 
 
 
