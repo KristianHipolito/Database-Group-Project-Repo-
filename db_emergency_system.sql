@@ -73,7 +73,7 @@ CREATE TABLE emergency_route (
 */
 CREATE TABLE users (
 	user_id int AUTO_INCREMENT PRIMARY KEY,
-    location_id int REFERENCES locations (location_id),
+    location_id int REFERENCES location (location_id),
     handicap BOOLEAN,
     user_first_name VARCHAR(100) NOT NULL,
     user_last_name VARCHAR(100) NOT NULL,
