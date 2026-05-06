@@ -63,3 +63,44 @@ BEGIN
 END//
 
 DELIMITER ;
+
+
+-- ----------------------------------
+-- FUNCTION
+DELIMITER //
+
+CREATE FUNCTION UserResourceCount(p_user_id INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    DECLARE total INT;
+    SELECT COUNT(*) INTO total
+    FROM user_resource
+    WHERE user_id = p_user_id;
+    RETURN total;
+END //
+
+DELIMITER ;
+
+
+
+-- Running the function checking the resource count for 
+
+SELECT 
+    u.user_id,
+    CONCAT(u.user_first_name, ' ', u.user_last_name) AS full_name,
+    UserResourceCount(u.user_id) AS resource_count
+FROM users u;
+
+
+-- ----------------------------------
+-- STORED PROCEDURE
+
+DELIMITER //
+CREATE PROCEDURE procedure_name (param_user_id INT, param_handicap BOOLEAN) 
+BEGIN 
+    UPDATE users
+    SET handicap = param_handicap
+    WHERE user_id = param_user_id;
+END // 
+DELIMITER ;
