@@ -75,6 +75,18 @@ FROM emergency_route
 ORDER BY eta_in_minutes ASC
 LIMIT 1;
 
+-- Identify unique resource types available in each building.
+-- Use Case: Quickly auditing safety equipment coverage without clutter.
+SELECT DISTINCT 
+    b.building_name, 
+    r.resource_type
+FROM buildings b
+JOIN building_floor bf ON b.building_id = bf.building_id
+JOIN location l ON bf.building_floor_id = l.building_floor_id
+JOIN route_resource rr ON l.location_id = rr.resource_id
+JOIN resources r ON rr.resource_id = r.resource_id
+ORDER BY b.building_name;
+
 -- Find the fastest route available per building
 SELECT *
 FROM (
