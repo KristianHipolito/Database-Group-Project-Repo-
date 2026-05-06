@@ -183,7 +183,7 @@ VALUES ('1st floor - Laboratory', TRUE, FALSE, 'Wheelchair'),
 
 INSERT INTO user_resource (user_id, resource_id) VALUES
 (1,4),(2,1),(2,4),(3,4),
-(4,4),(5,5),(5,7),(6,6),(6,8),
+(4,4),(5,5),(6,6),(6,8),
 (7,9),(8,12),(9,12),(9,14),
 (10,20),(10,22);
 
