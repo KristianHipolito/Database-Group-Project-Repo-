@@ -182,10 +182,12 @@ VALUES ('1st floor - Laboratory', TRUE, FALSE, 'Wheelchair'),
 ('4th floor - Classroom', TRUE, TRUE, 'Elevator');
 
 INSERT INTO user_resource (user_id, resource_id) VALUES
-(1,3),(1,5),(2,1),(2,4),(3,2),(3,6),
-(4,1),(4,3),(5,2),(5,7),(6,4),(6,8),
-(7,1),(7,5),(8,3),(8,6),(9,2),(9,9),
-(10,4),(10,10);
+(1,4),(2,1),(2,4),(3,4),
+(4,4),(5,5),(5,7),(6,6),(6,8),
+(7,9),(8,12),(9,12),(9,14),
+(10,20),(10,22);
+
+
 
 INSERT INTO route_resource (resource_id, route_id) VALUES
 (1,1),(2,1),(3,2),(4,2),(5,3),(6,3),
