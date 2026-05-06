@@ -88,7 +88,6 @@ CREATE TABLE users (
 */
 CREATE TABLE resources (
 	resource_id int AUTO_INCREMENT PRIMARY KEY,
-    route_id int REFERENCES route_resource (route_id),
     location VARCHAR(100),
     availability BOOLEAN NOT NULL,
     handicap BOOLEAN NOT NULL,
